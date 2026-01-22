@@ -1,3 +1,4 @@
+// Creating elements for the variables------
 const productNameInput = document.getElementById("product-name");
 const productPriceInput = document.getElementById("product-price");
 const addProductButton = document.getElementById("add-product");
@@ -58,10 +59,6 @@ addProductButton.addEventListener("click", () => {
   items.appendChild(pricespan);
   items.appendChild(quantitySpan);
   items.appendChild(removeButton);
-
-  
-
-//   const cartItem = createcartItem(name, price, qty);
   cart.appendChild(items);
   productNameInput.value = "";
   productPriceInput.value = "";
@@ -70,10 +67,11 @@ addProductButton.addEventListener("click", () => {
   updateTotalPrice(Number (price), Number (qty));
 });
 
-//function to create cart list----
-// function createcartItem(name, price, qty) {
 
-// }
+
+
+
+
 
 // <li class="cart-item" data-price="10">
 // <span>Product Name</span>
